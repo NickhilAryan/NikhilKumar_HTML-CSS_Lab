@@ -1,0 +1,82 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.background-video {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	overflow: hidden;
+}
+
+#myVideo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.form-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding: 30px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 2px solid #333;
+}
+
+h2 {
+	margin-top: 0;
+	text-align: center;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-bottom: 2px solid #ccc;
+	background-color: transparent;
+	font-size: 16px;
+	color: #333;
+	transition: background-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+	background-color: rgba(70, 130, 180, 0.35);
+	outline: none;
+}
+
+input[type="submit"], input[type="reset"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	border: none;
+	background-color: #4CAF50;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+	background-color: #3e8e41;
+}
+
+input[type="submit"]:active, input[type="reset"]:active {
+	background-color: #29703b;
+}
